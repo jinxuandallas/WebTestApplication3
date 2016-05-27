@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C755EEE-81A9-43E2-834C-F686E47BADDD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebTestApplication3</RootNamespace>
+    <AssemblyName>WebTestApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Login.aspx" />
+    <Content Include="ControlSample.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="RichTextBox\demo01.html" />
+    <Content Include="RichTextBox\js\brokenheart.gif" />
+    <Content Include="RichTextBox\js\jquery-1.4.4.min.js" />
+    <Content Include="RichTextBox\js\xheditor-1.2.2.min.js" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\angry.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\awkward.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\bye.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\config.txt" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\crazy.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\cry.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\curse.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\cute.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\despise.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\doubt.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\envy.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\fastcry.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\knock.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\laugh.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\mad.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\ohmy.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\panic.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\proud.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\quiet.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\sad.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\shutup.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\shy.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\sleep.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\smile.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\struggle.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\titter.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\tongue.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\wail.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\default\wronged.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\alien.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\angel.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\angry.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\bandit.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\biglaugh.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\blink.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\blush.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\config.txt" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\cool.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\cry.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\depres.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\devil.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\glare.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\heart.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\joyful.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\kiss.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\laugh.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\magician.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\ninja.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\pinch.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\police.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\sad.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\sick.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\sideways.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\sleep.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\smile.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\surprised.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\tongue.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\unsure.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\w00t.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\whistling.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\wondering.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\ipb\wub.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\1.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\10.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\11.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\12.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\13.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\14.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\15.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\16.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\17.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\18.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\19.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\2.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\20.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\21.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\22.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\23.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\24.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\25.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\26.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\27.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\28.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\29.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\3.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\30.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\31.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\32.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\33.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\34.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\35.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\36.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\37.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\38.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\39.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\4.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\40.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\5.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\6.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\7.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\8.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\msn\9.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\angry.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\bad.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\blush.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\brokenheart.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\bye.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\coffee.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\config.txt" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\cool.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\cry.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\curse.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\cute.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\devil.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\envy.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\gift.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\good.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\kiss.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\laugh.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\love.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\music.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\question.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\rose.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\sad.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\shocked.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\shout.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\sick.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\sleepy.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\smile.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\soccer.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\sweat.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\tired.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\tongue.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\victory.gif" />
+    <Content Include="RichTextBox\js\xheditor_emot\pidgin\wink.gif" />
+    <Content Include="RichTextBox\js\xheditor_lang\en.js" />
+    <Content Include="RichTextBox\js\xheditor_lang\zh-cn.js" />
+    <Content Include="RichTextBox\js\xheditor_lang\zh-tw.js" />
+    <Content Include="RichTextBox\js\xheditor_plugins\html2markdown.js" />
+    <Content Include="RichTextBox\js\xheditor_plugins\htmldomparser.js" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\img\add.gif" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\img\bg1.gif" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\img\bg2.gif" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\img\btnbg.gif" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\img\btnbgr.gif" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\img\clear.gif" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\img\progressbg.gif" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\img\start.gif" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\multiupload.css" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\multiupload.html" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\multiupload.js" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\swfupload\swfupload.js" />
+    <Content Include="RichTextBox\js\xheditor_plugins\multiupload\swfupload\swfupload.swf" />
+    <Content Include="RichTextBox\js\xheditor_plugins\showdown.js" />
+    <Content Include="RichTextBox\js\xheditor_plugins\ubb.js" />
+    <Content Include="RichTextBox\js\xheditor_skin\blank.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\iframe.css" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\anchor.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\close.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\flash.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\icons.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\loading.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\progress.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\progressbg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\tag-address.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\tag-div.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\tag-h1.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\tag-h2.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\tag-h3.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\tag-h4.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\tag-h5.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\tag-h6.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\tag-p.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\tag-pre.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\waiting.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\wmp.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\img\wordimg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\default\ui.css" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\iframe.css" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\anchor.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\close.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\flash.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\icons.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\loading.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\progress.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\progressbg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\tag-address.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\tag-div.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\tag-h1.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\tag-h2.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\tag-h3.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\tag-h4.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\tag-h5.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\tag-h6.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\tag-p.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\tag-pre.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\waiting.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\wmp.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\img\wordimg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\nostyle\ui.css" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\iframe.css" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\anchor.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\buttonbg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\close.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\flash.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\icons.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\loading.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\progress.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\progressbg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\tag-address.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\tag-div.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\tag-h1.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\tag-h2.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\tag-h3.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\tag-h4.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\tag-h5.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\tag-h6.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\tag-p.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\tag-pre.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\waiting.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\wmp.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\img\wordimg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007blue\ui.css" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\iframe.css" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\anchor.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\buttonbg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\close.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\flash.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\icons.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\loading.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\progress.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\progressbg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\tag-address.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\tag-div.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\tag-h1.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\tag-h2.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\tag-h3.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\tag-h4.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\tag-h5.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\tag-h6.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\tag-p.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\tag-pre.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\waiting.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\wmp.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\img\wordimg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\o2007silver\ui.css" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\iframe.css" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\anchor.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\buttonbg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\close.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\flash.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\icons.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\loading.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\progress.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\progressbg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\tag-address.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\tag-div.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\tag-h1.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\tag-h2.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\tag-h3.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\tag-h4.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\tag-h5.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\tag-h6.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\tag-p.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\tag-pre.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\titlebg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\waiting.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\wmp.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\img\wordimg.gif" />
+    <Content Include="RichTextBox\js\xheditor_skin\vista\ui.css" />
+    <Content Include="RichTextBox\SaveDatabase.aspx" />
+    <Content Include="RichTextBox\ShowContent.aspx" />
+    <Content Include="RichTextBox\testRichtextbox.aspx" />
+    <Content Include="RichTextBox\upload.aspx" />
+    <Content Include="RichTextBox\upload2.aspx" />
+    <Content Include="RichTextBox\Upload\brokenheart.gif" />
+    <Content Include="RichTextBox\Upload\Upload.aspx" />
+    <Content Include="TestDataSet.xsc">
+      <DependentUpon>TestDataSet.xsd</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Model2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Model2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model2.edmx</DependentUpon>
+      <LastGenOutput>Model2.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model2.edmx.diagram">
+      <DependentUpon>Model2.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model2.edmx</DependentUpon>
+      <LastGenOutput>Model2.cs</LastGenOutput>
+    </Content>
+    <None Include="TestDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TestDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="TestDataSet.xss">
+      <DependentUpon>TestDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="XMLSchema1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RichTextBox\User\Login.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="XSLTFile1.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Membership.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Users.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_UsersInRoles.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSample.aspx.cs">
+      <DependentUpon>ControlSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlSample.aspx.designer.cs">
+      <DependentUpon>ControlSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs" />
+    <Compile Include="Model2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model2.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RichTextBox\SaveDatabase.aspx.cs">
+      <DependentUpon>SaveDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\SaveDatabase.aspx.designer.cs">
+      <DependentUpon>SaveDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBox\ShowContent.aspx.cs">
+      <DependentUpon>ShowContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\ShowContent.aspx.designer.cs">
+      <DependentUpon>ShowContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBox\testRichtextbox.aspx.cs">
+      <DependentUpon>testRichtextbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\testRichtextbox.aspx.designer.cs">
+      <DependentUpon>testRichtextbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBox\Upload\Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\Upload\Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Table.cs">
+      <DependentUpon>Model2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestDataSet.cs">
+      <DependentUpon>TestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TestDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBox\User\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\User\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{74a0dc8f-781b-49b4-b4d9-a0918d2b2a8d}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5705</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5705/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
