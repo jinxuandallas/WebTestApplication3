@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
-    <script type="text/javascript" src="js/xheditor-1.2.2.min.js"></script> 
+    <script type="text/javascript" src="js/xheditor-1.2.2.min.js"></script>  
     <script type="text/javascript" src="js/xheditor_lang/zh-cn.js"></script>
     <style type="text/css">
         .auto-style1 {
